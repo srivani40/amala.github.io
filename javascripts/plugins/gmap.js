@@ -29,7 +29,7 @@ function initialize() {
   ];
   // var styledMap = new google.maps.StyledMapType(styles,
   //   {name: "Styled Map"});
-  var myLatLng = new google.maps.LatLng(14.313489, 76.6522538);
+  var myLatLng = new google.maps.LatLng(12.8889071, 77.5661202);
   var mapOptions = {
     zoom: 17,
     center: myLatLng,

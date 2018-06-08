@@ -47,6 +47,17 @@ if (jQuery().owlCarousel) {
 	    ],
 	    navigation  : false,
 	    pagination  : false,
+	    autoPlay    : 5000
+	});
+	$('#photo-carousel1').owlCarousel({
+	    itemsCustom : [
+	      [0   , 1],
+	      [768 , 3],
+	      [992 , 3],
+	      [1200, 4],
+	    ],
+	    navigation  : false,
+	    pagination  : false,
 	    autoPlay    : 3000
 	});
     $('#quote-carousel').owlCarousel({
