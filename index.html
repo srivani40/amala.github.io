@@ -91,13 +91,15 @@
   max-height: 168px;
   margin: 0 auto;
 }
+header{
+  position: relative;
+}
 #myVideo {
-    position: fixed;
+    position: absolute;
     right: 0;
-    bottom: 0;
     min-width: 100%; 
-    min-height: 80%;
-    top: 10%;
+    min-height: 100%;
+    top: 0;
 }
 @media (max-width: 480px){
   .namecard-head {
@@ -153,6 +155,10 @@
   <!-- HEADER
   ============================================== -->
   <header class="home-header" data-parallax="scroll" data-image-src="images/header/amalamithun.png">
+    <video autoplay loop id="myVideo">
+        <source src="amalamithun.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     <div class="container">
       <div class="row text-center">  
         <div class="col-md-12 header-content">
@@ -195,10 +201,6 @@
     </div>
 
     <section class="bg-image bg-light" id="the-couple" style="background-image: url('images/couple/section_bg.jpg');">
-      <!-- <video autoplay muted loop id="myVideo">
-        <source src="amalamithun.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video> -->
       <div class="container">
         <div class="section-header">
           <div class="col-xs-12">
@@ -290,7 +292,7 @@
             <h1 class="section-title">Wedding Events</h1>
             <div class="separator"></div>
             <p class="lead">
-              Myself and Mithun have pledged to start this new journey together by exchanging the marriage vows on 21st and 22nd  June’ 2018.
+              We, Amala and Mithun have pledged to start this new journey together by exchanging the marriage vows on 21st and 22nd  June’ 2018.
 
               With delighted hearts, we invite you on this auspicious occasion of our marriage ceremony and bless us with your graceful presence…
 
@@ -389,7 +391,7 @@
               <div class="event-item">
                 <div class="event-head">
                   <a class="event-link" href="#">
-                    <img class="img-responsive" src="images/events/event1.jpg" alt="...">
+                    <img class="img-responsive" src="images/photos/11.jpg" alt="...">
                     <i class="fa fa-search fa-lg"></i>
                   </a>
                 </div>
@@ -407,7 +409,7 @@
               <div class="event-item">
                 <div class="event-head">
                   <a class="event-link" href="#">
-                    <img class="img-responsive" src="images/events/event1.jpg" alt="...">
+                    <img class="img-responsive" src="images/photos/12.jpg" alt="...">
                     <i class="fa fa-search fa-lg"></i>
                   </a>
                 </div>
@@ -437,7 +439,7 @@
       <div class="container-fluid photo-carousel-wrap">
         <div class="owl-theme owl-carousel mg-b-lg" id="photo-carousel1">
           <div class="photo-item">
-            <img class="img-responsive" src="images/photos/event1.jpg" alt="...">
+            <img class="img-responsive" src="images/photos/13.jpg" alt="...">
             <a class="title" href="#" data-toggle="modal" data-target=".gallery-modal">happy bride</a>
           </div>
           <div class="photo-item">
@@ -453,15 +455,23 @@
             <!-- <a class="title" href="#" data-toggle="modal" data-target=".gallery-modal">happy bride</a> -->
           </div>
           <div class="photo-item">
+            <img class="img-responsive" src="images/photos/mithunfam1.jpg" alt="...">
+            <!-- <a class="title" href="#" data-toggle="modal" data-target=".gallery-modal">happy bride</a> -->
+          </div> 
+          <div class="photo-item">
             <img class="img-responsive" src="images/photos/event5.jpg" alt="...">
             <!-- <a class="title" href="#" data-toggle="modal" data-target=".gallery-modal">happy bride</a> -->
           </div>
           <div class="photo-item">
-            <img class="img-responsive" src="images/photos/event6.jpg" alt="...">
+            <img class="img-responsive" src="images/photos/14.jpg" alt="...">
             <!-- <a class="title" href="#" data-toggle="modal" data-target=".gallery-modal">happy bride</a> -->
           </div>    
           <div class="photo-item">
-            <img class="img-responsive" src="images/photos/event7.jpg" alt="...">
+            <img class="img-responsive" src="images/photos/15.jpg" alt="...">
+            <!-- <a class="title" href="#" data-toggle="modal" data-target=".gallery-modal">happy bride</a> -->
+          </div> 
+          <div class="photo-item">
+            <img class="img-responsive" src="images/photos/mithunfam2.jpg" alt="...">
             <!-- <a class="title" href="#" data-toggle="modal" data-target=".gallery-modal">happy bride</a> -->
           </div> 
           <div class="photo-item">
@@ -662,7 +672,7 @@
     </div> -->
 
     <!-- <div class="gmap" id="gmap"></div>         -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.292449414292!2d77.56612021437425!3d12.88890709091018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae155a2542375d%3A0x8fcfd8571463abd7!2sKanakasri+Convention+Hall!5e0!3m2!1sen!2sin!4v1528813562901" height="450" frameborder="0" style="border:0;width: 100%;" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.292449414292!2d77.56612021437425!3d12.88890709091018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae155a2542375d%3A0x8fcfd8571463abd7!2sKanakasri+Convention+Hall!5e0!3m2!1sen!2sin!4v1528813562901" height="450" frameborder="0" style="border:0;width: 100%;" allowfullscreen id="gmap"></iframe>
 
     <button class="btn btn-half-dark btn-scrolltop" id="scrollTop">
       <i class="fa fa-chevron-up"></i>
